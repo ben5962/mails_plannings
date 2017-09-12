@@ -34,6 +34,7 @@ class Objet_mail(email.message.EmailMessage):
     # set / get 
 
     def setName(self,nom_fichier_mail):
+        print('setName: debut du parse de {}'.format(nom_fichier_mail))
         if nom_fichier_mail.endswith('.eml'):
             self.nom_fichier_mail = nom_fichier_mail
         else:
@@ -62,16 +63,18 @@ class Objet_mail(email.message.EmailMessage):
         #https://www.ianlewis.org/en/parsing-email-attachments-python
         # https://docs.python.org/3/library/email.message.html#email.message.EmailMessage.get_content_type
         self.liste_pieces_jointes = []
-        compteur_piece_jointe = 1
+        compteur_piece_jointe = 0
         for part in self.conteneurMail.iter_attachments():
-            non_nul_si_piece_jointe = cree_Objet_Piece_Jointe(part,self, compteur_piece_jointe)
+            non_nul_si_piece_jointe = cree_Objet_Piece_Jointe(part,self, compteur_piece_jointe + 1)
             if non_nul_si_piece_jointe:
-                self.liste_pieces_jointes.append(non_nul_si_piece_jointe)
                 compteur_piece_jointe = compteur_piece_jointe + 1
+                self.liste_pieces_jointes.append(non_nul_si_piece_jointe)
+                
 
     def setListeNomFichiersPiecesJointes(self):
+        self.liste_noms_fichiers_pieces_jointes = []
         if self.liste_pieces_jointes:
-            self.liste_noms_fichiers_pieces_jointes = []
+            #self.liste_noms_fichiers_pieces_jointes = []
             from module_utilitaire_fichier import clean_windows_filename_string
             for pj in self.liste_pieces_jointes:
                 self.liste_noms_fichiers_pieces_jointes.append(clean_windows_filename_string(pj.getFileName()))
@@ -98,23 +101,52 @@ class Objet_mail(email.message.EmailMessage):
         return len(self.liste_pieces_jointes)
 
     def getAllAttachmentFilenames(self):
-        if self.liste_noms_fichiers_pieces_jointes:
-            return self.liste_noms_fichiers_pieces_jointes
+        try:
+            if self.liste_noms_fichiers_pieces_jointes:
+                return self.liste_noms_fichiers_pieces_jointes
+        except AttributeError as a:
+            #TODO: AttributeError: 'Objet_mail' object has no attribute 'liste_noms_fichiers_pieces_jointes'
+            print(a)
+            print('objet mail a pour attributs: {}'.format(dir(self)))
         else:
             return []
 
     def getAllSearchableMailheaderKeyNames(self):
         return self.conteneurMail.keys()
 
-    def getNormalizedName(self):
+    def getNormalizedName(self,shorten=False):
         import re
-        filename_with_unauthorized_characters = ''.join([self.getDate().isoformat(sep=' '),
-                        self.getSubject(),
-                        #self.getFrom(),
-                        re.search(r'\<(.*)\>', self.getFrom()).group(1),
-                        'has ' + str(self.getAttachmentCount()) + ' pj',
-                        '_'.join(self.getAllAttachmentFilenames()),
-                        '.eml'])
+        #from string plante si pas dechamp mail aliase.
+        #traiter ce cas
+        fromstring = re.search(r'\<(.*)\>', self.getFrom()).group(1)
+        if not fromstring:
+            fromstring = self.getFrom()
+        if not fromstring:
+            raise ValueError("getNormalizedName : fromstring vide malgre bricolage")
+        #compter pj
+        compter_pj = 'has ' + str(self.getAttachmentCount()) + ' pj'
+        if not compter_pj:
+            raise ValueError("getNormalizedName : Compter pj vide magre bricolage")
+        #attachmentfilenames
+        try:
+            attchfilename = '_'.join(self.getAllAttachmentFilenames())
+        except AttributeError:
+            print("pas trouve de chmp attachfilename pour mail {} alor uairait du renvoyer vide si pas d attc. pb plantae lors crea pj".format(
+                self.getName()))
+            raise AttributeError
+        if not shorten:
+            filename_with_unauthorized_characters = ''.join([
+                self.getDate().isoformat(sep=' '),
+                self.getSubject(),
+                fromstring,
+                compter_pj,
+                attchfilename,
+                '.eml'])
+        if shorten:
+            filename_with_unauthorized_characters = ''.join([
+                self.getDate().isoformat(sep=' '),
+                '.eml'])
+        
         from module_utilitaire_fichier import clean_windows_filename_string
         
         return clean_windows_filename_string(filename_with_unauthorized_characters)

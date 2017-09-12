@@ -59,7 +59,15 @@ Traceback (most recent call last):
     print(sys.path())
 TypeError: 'list' object is not callable
 >>> print(sys.path)
-['C:\\Users\\Utilisateur\\Documents\\GitHub\\mails_plannings\\normaliser_noms_mail_dedupliquer_mails', 'C:\\Users\\Utilisateur\\AppData\\Local\\Programs\\Python\\Python36-32\\python36.zip', 'C:\\Users\\Utilisateur\\AppData\\Local\\Programs\\Python\\Python36-32\\DLLs', 'C:\\Users\\Utilisateur\\AppData\\Local\\Programs\\Python\\Python36-32\\lib', 'C:\\Users\\Utilisateur\\AppData\\Local\\Programs\\Python\\Python36-32', 'C:\\Users\\Utilisateur\\AppData\\Local\\Programs\\Python\\Python36-32\\lib\\site-packages', WindowsPath('..'), '..', WindowsPath('C:/Users/Utilisateur/Documents/GitHub/mails_plannings/normaliser_noms_mail_dedupliquer_mails')]
+['C:\\Users\\Utilisateur\\Documents\\GitHub\\mails_plannings\\normaliser_noms_mail_dedupliquer_mails',
+ 'C:\\Users\\Utilisateur\\AppData\\Local\\Programs\\Python\\Python36-32\\python36.zip',
+ 'C:\\Users\\Utilisateur\\AppData\\Local\\Programs\\Python\\Python36-32\\DLLs',
+ 'C:\\Users\\Utilisateur\\AppData\\Local\\Programs\\Python\\Python36-32\\lib',
+ 'C:\\Users\\Utilisateur\\AppData\\Local\\Programs\\Python\\Python36-32',
+ 'C:\\Users\\Utilisateur\\AppData\\Local\\Programs\\Python\\Python36-32\\lib\\site-packages',
+ WindowsPath('..'),
+ '..',
+ WindowsPath('C:/Users/Utilisateur/Documents/GitHub/mails_plannings/normaliser_noms_mail_dedupliquer_mails')]
 >>> sys.path.append(str(p_voulu.cwd()))
 >>> print(sys.path)
 ['C:\\Users\\Utilisateur\\Documents\\GitHub\\mails_plannings\\normaliser_noms_mail_dedupliquer_mails', 'C:\\Users\\Utilisateur\\AppData\\Local\\Programs\\Python\\Python36-32\\python36.zip', 'C:\\Users\\Utilisateur\\AppData\\Local\\Programs\\Python\\Python36-32\\DLLs', 'C:\\Users\\Utilisateur\\AppData\\Local\\Programs\\Python\\Python36-32\\lib', 'C:\\Users\\Utilisateur\\AppData\\Local\\Programs\\Python\\Python36-32', 'C:\\Users\\Utilisateur\\AppData\\Local\\Programs\\Python\\Python36-32\\lib\\site-packages', WindowsPath('..'), '..', WindowsPath('C:/Users/Utilisateur/Documents/GitHub/mails_plannings/normaliser_noms_mail_dedupliquer_mails'), 'C:\\Users\\Utilisateur\\Documents\\GitHub\\mails_plannings\\normaliser_noms_mail_dedupliquer_mails']

@@ -8,7 +8,7 @@ def clean_windows_filename_string(filename):
     trantab = str.maketrans(invalid_chars_in_filename, '_'*len(invalid_chars_in_filename))
     return filename.translate(trantab)
 
-def getAvailibleFileName(filename,iterable,nbmaxdoublons=3):
+def getAvailibleFileName(filename,iterable,nbmaxdoublons=50):
     cpt = 0
     candidat = filename
     while candidat in iterable and cpt <= nbmaxdoublons:
@@ -24,8 +24,20 @@ def getAvailibleFileName(filename,iterable,nbmaxdoublons=3):
         raise ValueError("nbmaxdoublons atteint: {}".format(nbmaxdoublons))
     print('getAvailibleFilename : candidat candidat accepte {}: '.format(candidat))
     return candidat
-        
-        
+
+##############################################        
+# uttilitaires copes depuis imports_de_cochon
+from pathlib import Path
+def getParentDir(chemin):
+    to_resolve = chemin.joinpath('..')
+    resolved = to_resolve.resolve()
+    return resolved
+
+def getResolvedRelativeDir(chemin,  relativedir):
+    to_resolve = chemin.joinpath(relativedir)
+    resolved = to_resolve.resolve()
+    return resolved
+#############################################
         
 
 def copy_to(filein, filecopyname,destdir):
@@ -37,8 +49,9 @@ def copy_to(filein, filecopyname,destdir):
         raise ValueError("fich_in doit exister pour etre copie {}".format(fich_in))
 
     #verifier que le rep de dest exite bien
-    repdest = Path('.') / destdir
-    if not repdest in [x for x in curdir.iterdir() if x.is_dir()]:
+    #repdest = Path('.') / destdir
+    repdest = getResolvedRelativeDir(curdir, destdir)
+    if not repdest.is_dir():
         raise ValueError("repdest doit exister pour etre destination {}".format(repdest))
 
     # s il existe deja
@@ -46,11 +59,25 @@ def copy_to(filein, filecopyname,destdir):
     # tant que filecopyname existe deja
     # appeler filecopyname "doublon<01-99>filecopyname"
     # ajouter 1 a compteur
-    chemin = Path('.') / destdir
+    
+    #chemin = Path('.') / destdir
+    chemin = getResolvedRelativeDir(Path('.'),  destdir)
     candidat_choisi = getAvailibleFileName(filecopyname, [chemin_complet_fichier.name for chemin_complet_fichier in chemin.iterdir()])
-    fich_out = chemin / candidat_choisi
+    #fich_out = chemin / candidat_choisi
+    fich_out = getResolvedRelativeDir(chemin,candidat_choisi)
     import shutil
-    shutil.copyfile(fich_in,fich_out)
+    try:
+        shutil.copyfile(fich_in,fich_out)
+    except FileNotFoundError as f:
+        print(f)
+        print('la chaine candidat choisi a une longueur de {} caracteres et {} pour le chemin {} or lim 260 Car max avec le chemin'.format(
+            len(candidat_choisi),
+            len(str(chemin.resolve())),
+            str(chemin.resolve())))
+        print('essai avec carac non accentue et plus court')
+        
+        raise FileNotFoundError
+              
             
     
 
