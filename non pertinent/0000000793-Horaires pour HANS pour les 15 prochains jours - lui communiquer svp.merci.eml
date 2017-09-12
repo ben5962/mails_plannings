@@ -1,0 +1,49 @@
+Return-Path: sophie.willem@domoveil.fr
+Received: from mail.domoveil.fr (LHLO mail.domoveil.fr) (10.2.0.142) by
+ mail.domoveil.fr with LMTP; Wed, 29 Jan 2014 10:23:13 +0100 (CET)
+Received: from localhost (localhost [127.0.0.1])
+	by mail.domoveil.fr (Postfix) with ESMTP id 0A18C70A3D6;
+	Wed, 29 Jan 2014 10:23:13 +0100 (CET)
+X-Virus-Scanned: amavisd-new at domoveil.fr
+X-Spam-Flag: NO
+X-Spam-Score: 0.603
+X-Spam-Level:
+X-Spam-Status: No, score=0.603 tagged_above=-10 required=6.6
+	tests=[ALL_TRUSTED=-1, BAYES_50=0.8, RDNS_NONE=0.793,
+	T_HELO_NO_DOMAIN=0.01, T_KHOP_THREADED=-0.01,
+	T_LONG_HEADER_LINE_80=0.01, T_NOT_A_PERSON=-0.01,
+	T_RP_MATCHES_RCVD=-0.01, T_THREAD_INDEX_BAD=0.01,
+	T_UNKNOWN_ORIGIN=0.01] autolearn=no
+Received: from mail.domoveil.fr ([127.0.0.1])
+	by localhost (mail.domoveil.fr [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id nRaJ2Qf5QnRr; Wed, 29 Jan 2014 10:23:12 +0100 (CET)
+Received: from mail.domoveil.fr (mail.domoveil.fr [10.2.0.142])
+	by mail.domoveil.fr (Postfix) with ESMTP id 922D770A3D5
+	for <operateurs@domoveil.fr>; Wed, 29 Jan 2014 10:23:12 +0100 (CET)
+Date: Wed, 29 Jan 2014 10:23:12 +0100 (CET)
+From: Sophie Willem <sophie.willem@domoveil.fr>
+To: Liste de diffusion =?utf-8?Q?op=C3=A9rateur?= PC <operateurs@domoveil.fr>
+Message-ID: <1233478744.222151.1390987392350.JavaMail.root@domoveil.fr>
+In-Reply-To: <474355951.222143.1390987346042.JavaMail.root@domoveil.fr>
+Subject: Horaires pour HANS pour les 15 prochains jours - lui communiquer
+ svp.merci
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-Originating-IP: [10.6.3.12]
+X-Mailer: Zimbra 8.0.0_GA_5434 (ZimbraWebClient - FF26 (Win)/8.0.0_GA_5434)
+Thread-Topic: Horaires pour HANS pour les 15 prochains jours - lui communiquer svp.merci
+Thread-Index: Njw6FezFuepQx/tZYpFkiOwjewzVgA==
+
+LUNDI=0903-f=C3=A9vr=0923H-6H=097
+MARDI=0904-f=C3=A9vr=0923H-6H=097
+MERCREDI=09=09=09
+JEUDI=09=09=09
+VENDREDI=09=09=09
+SAMEDI=0908-f=C3=A9vr=0920H45-8H45=0912
+DIMANCHE=0909-f=C3=A9vr=0920H45-8H45=0912
+LUNDI=09=09=09
+MARDI=0911-f=C3=A9vr=097H-15H=098
+MERCREDI=0912-f=C3=A9vr=097H-15H=098
+JEUDI=0913-f=C3=A9vr=097H-15H=098
+VENDREDI=0914-f=C3=A9vr=097H-15H=098

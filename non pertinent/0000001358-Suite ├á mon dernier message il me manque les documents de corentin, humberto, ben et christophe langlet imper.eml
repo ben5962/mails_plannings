@@ -1,0 +1,57 @@
+Return-Path: sophie.willem@domoveil.fr
+Received: from mail.domoveil.fr (LHLO mail.domoveil.fr) (10.2.0.142) by
+ mail.domoveil.fr with LMTP; Thu, 17 Oct 2013 08:59:20 +0200 (CEST)
+Received: from localhost (localhost [127.0.0.1])
+	by mail.domoveil.fr (Postfix) with ESMTP id 31405B4851D;
+	Thu, 17 Oct 2013 08:59:20 +0200 (CEST)
+X-Virus-Scanned: amavisd-new at domoveil.fr
+X-Spam-Flag: NO
+X-Spam-Score: 0.734
+X-Spam-Level:
+X-Spam-Status: No, score=0.734 tagged_above=-10 required=6.6
+	tests=[ALL_TRUSTED=-1, BAYES_50=0.8, DKIM_SIGNED=0.1, RDNS_NONE=0.793,
+	T_BIG_HEADERS_2K=0.01, T_DKIM_INVALID=0.01, T_HELO_NO_DOMAIN=0.01,
+	T_LONG_HEADER_LINE_160=0.01, T_NOT_A_PERSON=-0.01,
+	T_RP_MATCHES_RCVD=-0.01, T_THREAD_INDEX_BAD=0.01,
+	T_UNKNOWN_ORIGIN=0.01, URIBL_BLOCKED=0.001] autolearn=no
+Authentication-Results: mail.domoveil.fr (amavisd-new); dkim=neutral
+	reason="invalid (public key: not available)" header.d=domoveil.fr
+Received: from mail.domoveil.fr ([127.0.0.1])
+	by localhost (mail.domoveil.fr [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id iZnqTrZ_wdHe; Thu, 17 Oct 2013 08:59:19 +0200 (CEST)
+Received: from mail.domoveil.fr (mail.domoveil.fr [10.2.0.142])
+	by mail.domoveil.fr (Postfix) with ESMTP id 890B4B48519
+	for <operateurs@domoveil.fr>; Thu, 17 Oct 2013 08:59:19 +0200 (CEST)
+X-DKIM: OpenDKIM Filter v2.6.0 mail.domoveil.fr 890B4B48519
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=domoveil.fr;
+	s=500207F2-3445-11E3-9B45-4AD6B1AF4F2B; t=1381993159;
+	bh=AtW0hIZ7qd7TE4WJfqLcf4UnSQm74R8x69kNa/TvWI0=;
+	h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type:
+	 Content-Transfer-Encoding;
+	b=abmUcomwqCBuW/OcZ+8yar8OxwDMsHfKLBmLsn+SNjAVsPi+P26mUUMNw9gSr/H0D
+	 5DShGMW/MaoakpxmT+uSaBYP4LAi+XIHyYQT+WvKF/1RiRqrwjU+rA2JgmwncLm+Tq
+	 SJ22cYc9qtKXDZb+CRE6elmQgGba3noDVx2hdsSU=
+Date: Thu, 17 Oct 2013 08:59:19 +0200 (CEST)
+From: Sophie Willem <sophie.willem@domoveil.fr>
+To: operateurs@domoveil.fr
+Message-ID: <833091933.45920.1381993159477.JavaMail.root@domoveil.fr>
+Subject: =?utf-8?Q?Suite_=C3=A0_mon_dernier_message_il_me_manq?=
+ =?utf-8?Q?ue_les_documents_de_corentin,_humberto,?=
+ =?utf-8?Q?_ben_et_christophe_langlet_imperativem?=
+ =?utf-8?Q?ent_retourn=C3=A9_avant_le_21.10.2013._merci?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-Originating-IP: [10.6.3.12]
+X-Mailer: Zimbra 8.0.0_GA_5434 (ZimbraWebClient - FF24 (Win)/8.0.0_GA_5434)
+Thread-Topic: Suite =?utf-8?Q?=C3=A0_mon_dernier_message_il_me_manque_les_documents_de_corentin=2C_humberto=2C_ben_et_christophe_langlet_imperativement_retourn=C3=A9?= avant le 21.10.2013. merci
+Thread-Index: OPkECMnwd//KDgDtqgfkcGtEFh/2Zg==
+
+
+
+Soci=C3=A9t=C3=A9 DOMOVEIL=20
+125 Rue de Tourcoing=20
+59100 Roubaix=20
+tel 03 20 11 58 20=20
+fax 03 20 11 58 37=20
+

@@ -1,0 +1,57 @@
+Return-Path: sophie.willem@domoveil.fr
+Received: from mail.domoveil.fr (LHLO mail.domoveil.fr) (10.2.0.142) by
+ mail.domoveil.fr with LMTP; Fri, 18 Oct 2013 10:18:45 +0200 (CEST)
+Received: from localhost (localhost [127.0.0.1])
+	by mail.domoveil.fr (Postfix) with ESMTP id 1DA766A3342
+	for <corentin.leclere@domoveil.fr>; Fri, 18 Oct 2013 10:18:45 +0200 (CEST)
+X-Virus-Scanned: amavisd-new at domoveil.fr
+X-Spam-Flag: NO
+X-Spam-Score: 2.238
+X-Spam-Level: **
+X-Spam-Status: No, score=2.238 tagged_above=-10 required=6.6
+	tests=[ALL_TRUSTED=-1, BAYES_50=0.8, DKIM_SIGNED=0.1, RDNS_NONE=0.793,
+	SUBJ_ALL_CAPS=1.506, T_DKIM_INVALID=0.01, T_HELO_NO_DOMAIN=0.01,
+	T_LONG_HEADER_LINE_80=0.01, T_NOT_A_PERSON=-0.01,
+	T_RP_MATCHES_RCVD=-0.01, T_THREAD_INDEX_BAD=0.01,
+	T_UNKNOWN_ORIGIN=0.01, UPPERCASE_50_75=0.008, URIBL_BLOCKED=0.001]
+	autolearn=no
+Authentication-Results: mail.domoveil.fr (amavisd-new); dkim=neutral
+	reason="invalid (public key: not available)" header.d=domoveil.fr
+Received: from mail.domoveil.fr ([127.0.0.1])
+	by localhost (mail.domoveil.fr [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id NAt_pVdYcbs1 for <corentin.leclere@domoveil.fr>;
+	Fri, 18 Oct 2013 10:18:44 +0200 (CEST)
+Received: from mail.domoveil.fr (mail.domoveil.fr [10.2.0.142])
+	by mail.domoveil.fr (Postfix) with ESMTP id 912576A32CB
+	for <corentin.leclere@domoveil.fr>; Fri, 18 Oct 2013 10:18:44 +0200 (CEST)
+X-DKIM: OpenDKIM Filter v2.6.0 mail.domoveil.fr 912576A32CB
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=domoveil.fr;
+	s=500207F2-3445-11E3-9B45-4AD6B1AF4F2B; t=1382084324;
+	bh=AtW0hIZ7qd7TE4WJfqLcf4UnSQm74R8x69kNa/TvWI0=;
+	h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type:
+	 Content-Transfer-Encoding;
+	b=EJQ+mNcdQpJ1vsAmdJPauBmAwJU1lryw02QBg0OMvmAQxi5hMjWq6T/6AY41RuNXO
+	 Ngngzgnfs5BzJdAjM+N1kdrhng6H2yKr1fVgSqLfwIlLm2hSEDQEUZfv/uXbxabTK6
+	 9qk3pFaCiy+0RPMHxK8ryfwOWpts0lvzh5naVbnI=
+Date: Fri, 18 Oct 2013 10:18:44 +0200 (CEST)
+From: Sophie Willem <sophie.willem@domoveil.fr>
+To: Corentin Leclere <corentin.leclere@domoveil.fr>
+Message-ID: <1462832237.56540.1382084324534.JavaMail.root@domoveil.fr>
+Subject: TU NE M AS PAS RENDU LE CODE DE DEONTONLOGIE SIGNE. TU ES LE
+ DERNIER DU PC. SANS FAUTE A TON RETOUR DE VACANCES.MERCI
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-Originating-IP: [10.6.3.12]
+X-Mailer: Zimbra 8.0.0_GA_5434 (ZimbraWebClient - FF24 (Win)/8.0.0_GA_5434)
+Thread-Topic: TU NE M AS PAS RENDU LE CODE DE DEONTONLOGIE SIGNE. TU ES LE DERNIER DU PC. SANS FAUTE A TON RETOUR DE VACANCES.MERCI
+Thread-Index: ygw+ZwlcdFseB7z5W0bkbQ2y+HGl4A==
+
+
+
+Soci=C3=A9t=C3=A9 DOMOVEIL=20
+125 Rue de Tourcoing=20
+59100 Roubaix=20
+tel 03 20 11 58 20=20
+fax 03 20 11 58 37=20
+

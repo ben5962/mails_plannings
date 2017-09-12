@@ -1,0 +1,63 @@
+Return-Path: sophie.willem@domoveil.fr
+Received: from mail.domoveil.fr (LHLO mail.domoveil.fr) (10.2.0.142) by
+ mail.domoveil.fr with LMTP; Thu, 17 Oct 2013 16:59:41 +0200 (CEST)
+Received: from localhost (localhost [127.0.0.1])
+	by mail.domoveil.fr (Postfix) with ESMTP id B5B076A2E8D;
+	Thu, 17 Oct 2013 16:59:41 +0200 (CEST)
+X-Virus-Scanned: amavisd-new at domoveil.fr
+X-Spam-Flag: NO
+X-Spam-Score: 0.724
+X-Spam-Level:
+X-Spam-Status: No, score=0.724 tagged_above=-10 required=6.6
+	tests=[ALL_TRUSTED=-1, BAYES_50=0.8, DKIM_SIGNED=0.1, RDNS_NONE=0.793,
+	T_BIG_HEADERS_2K=0.01, T_DKIM_INVALID=0.01, T_HELO_NO_DOMAIN=0.01,
+	T_KHOP_THREADED=-0.01, T_LONG_HEADER_LINE_80=0.01,
+	T_NOT_A_PERSON=-0.01, T_RP_MATCHES_RCVD=-0.01,
+	T_THREAD_INDEX_BAD=0.01, T_UNKNOWN_ORIGIN=0.01, URIBL_BLOCKED=0.001]
+	autolearn=no
+Authentication-Results: mail.domoveil.fr (amavisd-new); dkim=neutral
+	reason="invalid (public key: not available)" header.d=domoveil.fr
+Received: from mail.domoveil.fr ([127.0.0.1])
+	by localhost (mail.domoveil.fr [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id 4Es99GOpR5le; Thu, 17 Oct 2013 16:59:41 +0200 (CEST)
+Received: from mail.domoveil.fr (mail.domoveil.fr [10.2.0.142])
+	by mail.domoveil.fr (Postfix) with ESMTP id DE66A6A2DE3;
+	Thu, 17 Oct 2013 16:59:40 +0200 (CEST)
+X-DKIM: OpenDKIM Filter v2.6.0 mail.domoveil.fr DE66A6A2DE3
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=domoveil.fr;
+	s=500207F2-3445-11E3-9B45-4AD6B1AF4F2B; t=1382021980;
+	bh=91YWyuHLfJY/WGoMl90bM9CrmrbupYfti9P3MEVykf4=;
+	h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type:
+	 Content-Transfer-Encoding;
+	b=of9P3TwbmCV6Pa14NhU/Oix2NXmyZ7MiSIHwM69VbOMFzk57grV65Vpnutozprsad
+	 0rbjolxXGVwrR1LtkneJWMFx5Aef/Bxq2aHAwqoWde6t7VG1RYxx98wZw/SYZFzn4Z
+	 DIGDUQUcVqaXzj/qjAyz6GuhZIqL0nPL15RtrqQg=
+Date: Thu, 17 Oct 2013 16:59:40 +0200 (CEST)
+From: Sophie Willem <sophie.willem@domoveil.fr>
+To: Liste de diffusion =?utf-8?Q?op=C3=A9rateur?= PC <operateurs@domoveil.fr>, 
+	=?utf-8?Q?S=C3=A9bastien?= BROCHET <sebastien.brochet@domoveil.fr>, 
+	=?utf-8?Q?S=C3=A9bastien?= BROCHET <sebastien.brochet@domoveil.fr>, 
+	Christophe Rybak <christophe.rybak@domoveil.fr>, 
+	Ludovic Gervois <ludovic.gervois@domoveil.fr>, 
+	Jean Francois Brasselet <jean-francois.brasselet@domoveil.fr>
+Message-ID: <1089061602.52503.1382021980860.JavaMail.root@domoveil.fr>
+In-Reply-To: <735675746.52493.1382021952511.JavaMail.root@domoveil.fr>
+Subject: =?utf-8?Q?pour_consulter_la_convention_collective_=C3=A0_tout_?=
+ =?utf-8?Q?moment_vous_pouvez_cliquer_sur_le_lient_suivant?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-Originating-IP: [10.6.3.12]
+X-Mailer: Zimbra 8.0.0_GA_5434 (ZimbraWebClient - FF24 (Win)/8.0.0_GA_5434)
+Thread-Topic: pour consulter la convention collective =?utf-8?Q?=C3=A0_tout?= moment vous pouvez cliquer sur le lient suivant
+Thread-Index: FEA/RfhqhNfUR37hg+EI3dqxFQ17Mg==
+
+http://www.legifrance.gouv.fr/affichIDCC.do?idConvention=3DKALICONT00000563=
+5405&fastReqId=3D965038977&fastPos=3D1&oldAction=3DrechConvColl
+
+Soci=C3=A9t=C3=A9 DOMOVEIL=20
+125 Rue de Tourcoing=20
+59100 Roubaix=20
+tel 03 20 11 58 20=20
+fax 03 20 11 58 37=20
+
